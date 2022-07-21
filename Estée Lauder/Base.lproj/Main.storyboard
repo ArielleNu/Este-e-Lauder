@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Este_e_Lauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="WBp-w7-dGG">
+                                <rect key="frame" x="-1322" y="-186" width="1762" height="1200"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-16 at 9.50.20 AM" translatesAutoresizingMaskIntoConstraints="NO" id="NcU-Wg-1ea">
+                                <rect key="frame" x="-5" y="295" width="425" height="239"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h4G-6V-AkE" appends="YES" id="zt8-sq-Ppw"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.066666662690000003" green="0.15686275059999999" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="WBp-w7-dGG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-186" id="SeG-tD-OCz"/>
+                            <constraint firstAttribute="bottom" secondItem="WBp-w7-dGG" secondAttribute="bottom" constant="-118" id="XQ7-l4-2gx"/>
+                            <constraint firstItem="WBp-w7-dGG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1322" id="aFz-FK-K83"/>
+                            <constraint firstAttribute="trailing" secondItem="WBp-w7-dGG" secondAttribute="trailing" constant="-26" id="u4P-r7-ufB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="b3u-52-UJI" kind="presentation" identifier="Left" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="OGG-DC-RPp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="h4G-6V-AkE">
+                    <connections>
+                        <action selector="swipeFirstLeft:" destination="BYZ-38-t0r" id="1fQ-Kf-Un7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="64.955357142857139"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="zdl-Fs-8SA">
+            <objects>
+                <viewController id="E46-Na-XRa" customClass="AboutViewController" customModule="Este_e_Lauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nB6-TK-VYd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-wo-3kV">
+                                <rect key="frame" x="0.0" y="222" width="414" height="545"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="BrS-I0-Qcd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="s12-am-u9a"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xM5-8c-oev">
+                                <rect key="frame" x="149" y="775" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-bI-R2n">
+                                <rect key="frame" x="20" y="829" width="94" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ABOUT">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz1-Lp-9zh">
+                                <rect key="frame" x="107" y="829" width="98" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="CONTACT">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ual-hh-azg" kind="presentation" modalPresentationStyle="fullScreen" id="WKf-ne-s9c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-Ia-Pjd">
+                                <rect key="frame" x="199" y="829" width="82" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LATEST">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RAv-o7-CkA" kind="presentation" modalPresentationStyle="fullScreen" id="cxc-mT-pjV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTZ-0g-F3u">
+                                <rect key="frame" x="272" y="829" width="121" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EXPERIENCES">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mns-Ic-Bc1" kind="presentation" modalPresentationStyle="fullScreen" id="vC9-hX-cdF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5V-VK-6Gi">
+                                <rect key="frame" x="47" y="61" width="320" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Chapter 1: Born for Beauty">
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="28" name="Cochin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-49-Yfl">
+                                <rect key="frame" x="30" y="136" width="355" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">Estée Lauder seemed destined for a life in beauty. Here, discover how she went from dreaming of her name in lights to seeing it on jars of skincare around the world.</string>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="10"/>
+                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scu-0c-Qlg">
+                                <rect key="frame" x="47" y="178" width="326" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="&quot;You ask my age? I tell you it simply doesn’t matter.&quot;">
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="15" name="Cochin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-V1-O48">
+                                <rect key="frame" x="30" y="93" width="355" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The niece of a Hungarian chemist, 
+Estée was trained in the art of face creams at an early age.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="14" name="Cochin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xg4-Ps-VJD"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="xM5-8c-oev" id="1ti-At-7xe"/>
+                        <outlet property="scrollView" destination="aXX-wo-3kV" id="wGR-fa-ITC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCR-6b-tOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.97101449275374" y="-611.38392857142856"/>
+        </scene>
+        <!--Latest View Controller-->
+        <scene sceneID="Y9j-Og-m8S">
+            <objects>
+                <viewController id="RAv-o7-CkA" customClass="LatestViewController" customModule="Este_e_Lauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykr-CT-UFG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-Ei-ikS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaO-dY-qbU">
+                                        <rect key="frame" x="0.0" y="52" width="414" height="2200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-g9-k0r">
+                                                <rect key="frame" x="0.0" y="0.0" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="BmH-EE-MYo">
+                                                <rect key="frame" x="136" y="34" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="M1Z-j0-VwW">
+                                                <rect key="frame" x="262" y="0.0" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="ymC-rU-e8i">
+                                                <rect key="frame" x="0.0" y="158" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="VSV-dl-rVA">
+                                                <rect key="frame" x="85" y="146" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="qU5-4M-RYy">
+                                                <rect key="frame" x="196" y="434" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="2O8-E5-xed">
+                                                <rect key="frame" x="0.0" y="286" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="9eU-Bn-FW4">
+                                                <rect key="frame" x="156" y="310" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="MUN-yU-wYt">
+                                                <rect key="frame" x="310" y="463" width="152" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5(1)" translatesAutoresizingMaskIntoConstraints="NO" id="4XY-Rc-vZB">
+                                                <rect key="frame" x="310" y="322" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gn0-xD-x2r">
+                                                <rect key="frame" x="-88" y="449" width="169" height="154"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Q0b-Ws-0Zi">
+                                                <rect key="frame" x="36" y="434" width="169" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="sJi-mz-FbF">
+                                                <rect key="frame" x="235" y="158" width="222" height="181"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-17 at 8.11.31 AM copy" translatesAutoresizingMaskIntoConstraints="NO" id="knE-jb-F1y">
+                                                <rect key="frame" x="0.0" y="233" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-17 at 8.11.31 AM copy" translatesAutoresizingMaskIntoConstraints="NO" id="F5D-n2-CQP">
+                                                <rect key="frame" x="177" y="233" width="280" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NEW RELEASES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-Jr-VZv">
+                                                <rect key="frame" x="0.0" y="280" width="414" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latest6 copy" translatesAutoresizingMaskIntoConstraints="NO" id="00z-hy-By2">
+                                                <rect key="frame" x="-30" y="1936" width="234" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latest5 copy" translatesAutoresizingMaskIntoConstraints="NO" id="mBC-EB-K4F">
+                                                <rect key="frame" x="-30" y="1763" width="234" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latest4 copy" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-36-bAn">
+                                                <rect key="frame" x="-9" y="1642" width="192" height="179"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latest3 copy" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-Vk-Gm0">
+                                                <rect key="frame" x="-28" y="1437" width="234" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latest2 copy" translatesAutoresizingMaskIntoConstraints="NO" id="3T5-Da-oDg">
+                                                <rect key="frame" x="-28" y="1297" width="234" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latest1 copy" translatesAutoresizingMaskIntoConstraints="NO" id="C3V-kG-g2q">
+                                                <rect key="frame" x="-30" y="1153" width="234" height="207"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePk-hn-m3w">
+                                                <rect key="frame" x="177" y="1207" width="218" height="118"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">
+Product Details
+Starting tonight, supercharge your eyes for a brighter, more wide-awake eye look. Dark circles look brighter in just 2 weeks. Lines and other initial signs of eye aging look reduced.
+Double Action: Fight the Visible Effects of Free Radical Damage. Blue light, including from devices, triggers skin-damaging free radicals. Our best eye cream has two powerful actions to fight the visible effects. </string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="8"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIf-rv-21f">
+                                                <rect key="frame" x="177" y="1315" width="218" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">
+Product Details
+The power is within your skin to feel firmer, look radiant, deeply nourished—more lifted. Discover these high-performance formulas to reduce the look of lines and wrinkles and reveal your most beautiful, healthy-looking skin. This set features a full-size Advanced Night Repair—our revolutionary serum to help maximize the restorative power of night to deliver accelerated visible renewal. 
+Limited-time collection includes:
+Advanced Night Repair Serum Synchronized Multi-Recovery Complex, full-size (1 oz./30ml)
+New Advanced Night Repair Eye Supercharged Gel-Crème Synchronized Multi-Recovery Eye Cream, deluxe travel size (.17 oz./5ml)
+Revitalizing Supreme+ Moisturizer Youth Power Creme, deluxe travel size (.5 oz./15ml)</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="8"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-Y4-8oq">
+                                                <rect key="frame" x="177" y="1492" width="218" height="188"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">
+Product Details
+Supercharge your eyes tonight. Discover these high-performance formulas to visibly repair, hydrate and reignite your radiance. This set features a full-size New Advanced Night Repair Eye Supercharged Gel-Creme to reveal a smoother, more well-rested look and brighten the undereye area. Diminishes the look of lines. Plumps and hydrates. Lightweight, fast-absorbing texture.
+
+Limited-time collection includes:
+New Advanced Night Repair Eye Supercharged Gel-Creme Synchronized Multi-Recovery Eye Cream, full-size (.5 oz./15ml)
+New Advanced Night Repair Eye Supercharged Gel-Creme Synchronized Multi-Recovery Eye Cream, deluxe travel size (.17 oz./5ml)
+Advanced Night Repair Serum Synchronized Multi-Recovery Complex, deluxe travel size (.24 oz./7ml)</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="8"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7e-Ug-dcz">
+                                                <rect key="frame" x="177" y="1688" width="218" height="127"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">
+Product Details
+Our revolutionary Advanced Night Repair serum with its exclusive technology helps skin maximize its natural rhythm of repair and protection to deliver visible renewal. Significantly reduces the look of multiple signs of aging caused by the environmental assaults of modern life. Wake up to more youthful-looking skin. 
+This limited-edition collection includes:
+Advanced Night Repair Synchronized Multi-Recovery Complex, full-size (1.7oz. oz./50ml)
+4 Revitalizing Supreme+ Youth Power Creme, deluxe travel sizes (.24 oz./7ml each)</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="8"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5T-so-yey">
+                                                <rect key="frame" x="172" y="1966" width="229" height="173"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">
+Product Details
+Our revolutionary Advanced Night Repair serum with its exclusive technology, helps maximize the restorative power of night to deliver visible renewal. Significantly reduces the look of multiple signs of aging caused by the environmental assaults of modern life. Wake up to more youthful-looking skin.
+Set includes three travel-friendly sizes to take with you wherever you go. 
+This carton is made from FSC-certified paperboard and 100% recycled ribbon. Please remove ribbon and recycle carton. 
+Limited-time collection includes:
+Advanced Night Repair Synchronized Multi-Recovery Complex, full-size (1 oz./30ml)
+2 Advanced Night Repair Synchronized Multi-Recovery Complex, deluxe travel size (.5 oz./15ml each)</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="8"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0t-WN-OcH">
+                                                <rect key="frame" x="-38" y="598" width="500" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFy-44-gLS">
+                                                <rect key="frame" x="-43" y="1176" width="500" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxX-vY-41T">
+                                                <rect key="frame" x="36" y="641" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="latest1"/>
+                                                <connections>
+                                                    <action selector="superchargedGelPressed:" destination="RAv-o7-CkA" eventType="touchUpInside" id="3N5-lS-2am"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fc-Vz-WvU">
+                                                <rect key="frame" x="36" y="817" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="latest3"/>
+                                                <connections>
+                                                    <action selector="majorEyeImpactSet:" destination="RAv-o7-CkA" eventType="touchUpInside" id="nhz-HC-0wa"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yq-le-H5K">
+                                                <rect key="frame" x="43" y="641" width="161" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Advanced Night Repair Eye Supercharged Gel-Creme
+Synchronized Multi-Recovery Eye Cream</string>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our best eye cream, for dark circles, lines, more." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-dL-FDe">
+                                                <rect key="frame" x="40" y="757" width="161" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="11"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dp-Ux-rYe">
+                                                <rect key="frame" x="213" y="641" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="latest2"/>
+                                                <connections>
+                                                    <action selector="nightimeNecessities3set:" destination="RAv-o7-CkA" eventType="touchUpInside" id="CLX-0h-Vrj"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i10-ly-zvh">
+                                                <rect key="frame" x="220" y="641" width="161" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Nighttime Necessities
+Repair + Lift + Hydrate Skincare Set</string>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCj-fI-PBR">
+                                                <rect key="frame" x="220" y="757" width="161" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">3-piece collection. Includes full-size (1 oz./30ml) serum.
+$133.00 Value.</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="11"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVe-yE-xl0">
+                                                <rect key="frame" x="37" y="817" width="167" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Major Eye Impact
+Repair + Brighten Skincare Set</string>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5a-XA-GXc">
+                                                <rect key="frame" x="41" y="931" width="165" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">3-piece set including a Full-Size New Advanced Night Repair Eye Supercharged Gel-Creme, plus our #1 face serum.
+$111.00 Value.</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="9"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86R-Lk-LIq">
+                                                <rect key="frame" x="212" y="817" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="latest4"/>
+                                                <connections>
+                                                    <action selector="reigniteYourRadiance:" destination="RAv-o7-CkA" eventType="touchUpInside" id="NJJ-MC-xwr"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNZ-Dj-nSQ">
+                                                <rect key="frame" x="219" y="817" width="161" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Reignite Your Radiance
+Repair Serum + Moisturizer</string>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bP-Pn-2U0">
+                                                <rect key="frame" x="220" y="933" width="161" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">5-piece collection including 1 full-size repair serum. 
+$164.00 Value.</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="11"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSI-Ir-vPa">
+                                                <rect key="frame" x="36" y="977" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="latest5"/>
+                                                <connections>
+                                                    <action selector="majorEyeImpact:" destination="RAv-o7-CkA" eventType="touchUpInside" id="mYn-T1-uFN"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOn-iL-y4V">
+                                                <rect key="frame" x="36" y="977" width="165" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Major Eye Impact
+Repair + Smooth + Brighten</string>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiA-5E-sBD">
+                                                <rect key="frame" x="38" y="1093" width="165" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">3-piece set including skincare must-haves to look and feel firmer, radiant, deeply nourished—and now, more lifted.
+$105.00 Value</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="9"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-w4-iYc">
+                                                <rect key="frame" x="212" y="977" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="latest6"/>
+                                                <connections>
+                                                    <action selector="youthGeneratingPower:" destination="RAv-o7-CkA" eventType="touchUpInside" id="I0e-UP-VDP"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blO-7O-ybK">
+                                                <rect key="frame" x="219" y="977" width="161" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Youth Generating Power
+Repair. Firm. Hydrate.</string>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt9-cl-JBc">
+                                                <rect key="frame" x="220" y="1093" width="161" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">3-piece collection including 1 full-size serum.
+$150.00 Value.</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="11"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OM9-Ng-YSe">
+                                                <rect key="frame" x="177" y="1823" width="218" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">
+Product Details
+Discover these high-performance formulas to feel firmer, look radiant, deeply nourished—and now, more lifted. This set features a full-size Revitalizing Supreme+ Eye Balm to reduce the look of lines and dark circles. Leaves the eye area looking radiant and more youthful. For an added boost, can also be used as a weekly eye mask. 
+Limited-time collection includes:
+New Revitalizing Supreme+ Youth Power Eye Balm, full-size (.5 oz./15ml)
+Advanced Night Repair Synchronized Multi-Recovery Complex, deluxe travel size (.24 oz./7ml)
+New Revitalizing Supreme+ Youth Power Creme, deluxe travel size (.24 oz./7ml)</string>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="8"/>
+                                                <color key="textColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT6-74-Bgd">
+                                                <rect key="frame" x="23" y="2147" width="94" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ABOUT">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="E46-Na-XRa" kind="presentation" modalPresentationStyle="fullScreen" id="owQ-lw-ybs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-2X-NVZ">
+                                                <rect key="frame" x="110" y="2147" width="98" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="CONTACT">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="ual-hh-azg" kind="presentation" modalPresentationStyle="fullScreen" id="abf-Wg-VBr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nst-KV-x81">
+                                                <rect key="frame" x="202" y="2147" width="82" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="LATEST">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z94-X6-4Yh">
+                                                <rect key="frame" x="271" y="2147" width="121" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="EXPERIENCES">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="mns-Ic-Bc1" kind="presentation" modalPresentationStyle="fullScreen" id="f1m-f9-ijU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90588235859999999" green="0.91764706370000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2200" id="rOI-au-hRo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZaO-dY-qbU" secondAttribute="bottom" id="72M-nz-BZK"/>
+                                    <constraint firstItem="ZaO-dY-qbU" firstAttribute="leading" secondItem="0Yr-Ei-ikS" secondAttribute="leading" id="Lty-jV-dc9"/>
+                                    <constraint firstItem="ZaO-dY-qbU" firstAttribute="top" secondItem="0Yr-Ei-ikS" secondAttribute="topMargin" id="Mpl-m2-ZVO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZaO-dY-qbU" secondAttribute="trailing" id="QCK-px-oLG"/>
+                                    <constraint firstItem="ZaO-dY-qbU" firstAttribute="centerX" secondItem="0Yr-Ei-ikS" secondAttribute="centerX" id="TCR-Gt-PLe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tXC-tm-uQQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Yr-Ei-ikS" firstAttribute="trailing" secondItem="tXC-tm-uQQ" secondAttribute="trailing" id="8dj-Lc-Bw5"/>
+                            <constraint firstItem="0Yr-Ei-ikS" firstAttribute="top" secondItem="ykr-CT-UFG" secondAttribute="top" id="9Lh-Lh-9pd"/>
+                            <constraint firstAttribute="bottom" secondItem="0Yr-Ei-ikS" secondAttribute="bottom" id="hip-e7-Xui"/>
+                            <constraint firstItem="0Yr-Ei-ikS" firstAttribute="leading" secondItem="tXC-tm-uQQ" secondAttribute="leading" id="vz7-ZC-dJQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dHc-W9-qHF"/>
+                    <connections>
+                        <outlet property="majorEyeImpact" destination="YOn-iL-y4V" id="JYv-Py-ikr"/>
+                        <outlet property="majorEyeImpact2" destination="EiA-5E-sBD" id="eYT-1T-AQV"/>
+                        <outlet property="majorEyeImpactSet" destination="HVe-yE-xl0" id="fFj-G2-G2s"/>
+                        <outlet property="majorEyeImpactSet2" destination="a5a-XA-GXc" id="pcr-Cd-LA5"/>
+                        <outlet property="nightimeNecessities3set" destination="i10-ly-zvh" id="OZR-QR-ALC"/>
+                        <outlet property="nightimeNecessities3set2" destination="vCj-fI-PBR" id="8GC-xu-isl"/>
+                        <outlet property="reigniteYourRadiance" destination="bNZ-Dj-nSQ" id="Vd4-7G-f75"/>
+                        <outlet property="reigniteYourRadiance2" destination="6bP-Pn-2U0" id="Ktu-jV-VcQ"/>
+                        <outlet property="superchargedGel" destination="0yq-le-H5K" id="2XR-mp-or6"/>
+                        <outlet property="superchargedGel2" destination="Nfe-dL-FDe" id="mdu-Td-caB"/>
+                        <outlet property="youthGeneratingPower" destination="blO-7O-ybK" id="ac7-a7-Mg5"/>
+                        <outlet property="youthGeneratingPower2" destination="Zt9-cl-JBc" id="YSO-8u-jQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejJ-In-h9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550.467289719626" y="-413.390928725702"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="1m1-j2-wyn">
+            <objects>
+                <viewController storyboardIdentifier="swipeableView" id="b3u-52-UJI" customClass="MainScreenViewController" customModule="Este_e_Lauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4DC-xQ-Xab">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new4" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-17-F6G">
+                                <rect key="frame" x="231" y="720" width="183" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-16 at 9.50.20 AM" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-Ez-Wh4">
+                                <rect key="frame" x="-106" y="829" width="626" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etl-8v-GhQ">
+                                <rect key="frame" x="20" y="829" width="94" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ABOUT">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="E46-Na-XRa" kind="presentation" modalPresentationStyle="fullScreen" id="B0j-oL-eeB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPg-Hn-2gF">
+                                <rect key="frame" x="108" y="829" width="98" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="CONTACT">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ual-hh-azg" kind="presentation" modalPresentationStyle="fullScreen" id="2hF-Zg-gO9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC5-eI-xC5">
+                                <rect key="frame" x="200" y="829" width="82" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LATEST">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RAv-o7-CkA" kind="presentation" modalPresentationStyle="fullScreen" id="ZaL-qo-PeS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j53-8J-zNy">
+                                <rect key="frame" x="273" y="829" width="121" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EXPERIENCES">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mns-Ic-Bc1" kind="presentation" modalPresentationStyle="fullScreen" id="kH2-EU-DHO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new2" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-Ik-9Bt">
+                                <rect key="frame" x="-60" y="548" width="253" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new1" translatesAutoresizingMaskIntoConstraints="NO" id="UxV-nD-GhE">
+                                <rect key="frame" x="-5" y="44" width="424" height="601"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-16 at 9.50.20 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Os5-eQ-ZyG">
+                                <rect key="frame" x="-106" y="-176" width="626" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eml-hS-gAf">
+                                <rect key="frame" x="201" y="569" width="163" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="JUST IN!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.066666662690000003" green="0.15686275059999999" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="43" name="Optima-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09W-43-gQh">
+                                <rect key="frame" x="171" y="596" width="223" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Advanced Night Repair Eye Supercharged Gel-Creme
+Synchronized Multi-Recovery Eye Cream</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="14" name="Optima-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-vz-boS">
+                                <rect key="frame" x="20" y="734" width="203" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="CHECK OUT THE NEW LINE BY CLICKING LATEST BELOW!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="14" name="Optima-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4a-eQ-t1l">
+                                <rect key="frame" x="159" y="653" width="246" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="FOR ALL AGES, ALL SKINTONES, ALL SKINTYPES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ4-Wn-ue9">
+                                <rect key="frame" x="20" y="758" width="168" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LIMITED EDITION COLLECTIONS!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="20" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-Ar-ehi">
+                                <rect key="frame" x="0.0" y="720" width="584" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.63137257099999999" green="0.30196079609999998" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5Q-CM-l1a">
+                                <rect key="frame" x="0.0" y="555" width="520" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.63137257099999999" green="0.30196079609999998" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yP4-Im-OuB"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ejV-Nx-2ro"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnL-8o-WY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.94392523364479" y="64.794816414686835"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="b9J-2P-7Ht">
+            <objects>
+                <viewController id="ual-hh-azg" customClass="ContactViewController" customModule="Este_e_Lauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cvv-py-dOm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmP-B8-xDF">
+                                <rect key="frame" x="20" y="829" width="94" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ABOUT">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="E46-Na-XRa" kind="presentation" modalPresentationStyle="fullScreen" id="YVk-dA-B3J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3x-og-ECp">
+                                <rect key="frame" x="108" y="829" width="98" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="CONTACT">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-gQ-iye">
+                                <rect key="frame" x="200" y="829" width="82" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LATEST">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RAv-o7-CkA" kind="presentation" modalPresentationStyle="fullScreen" id="lm8-lM-PPd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OC-B4-pjW">
+                                <rect key="frame" x="273" y="829" width="121" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EXPERIENCES">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mns-Ic-Bc1" kind="presentation" modalPresentationStyle="fullScreen" id="01r-1n-ey6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTs-gT-sdF">
+                                <rect key="frame" x="0.0" y="0.0" width="495" height="124"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86666667460000002" green="0.86666667460000002" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.86666667460000002" green="0.86666667460000002" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN THE COMMUNITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhz-b8-mJ9">
+                                <rect key="frame" x="20" y="65" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="32"/>
+                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-UF-VLL">
+                                <rect key="frame" x="20" y="699" width="107" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubePressed:" destination="ual-hh-azg" eventType="touchUpInside" id="tHw-hk-VfK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DW0-zS-h0Z">
+                                <rect key="frame" x="20" y="568" width="107" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="insta"/>
+                                <connections>
+                                    <action selector="instaPressed:" destination="ual-hh-azg" eventType="touchUpInside" id="hbr-Iy-q9A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slX-b4-Dwl">
+                                <rect key="frame" x="154" y="568" width="107" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pinterest"/>
+                                <connections>
+                                    <action selector="pinterestPressed:" destination="ual-hh-azg" eventType="touchUpInside" id="qYD-y5-yij"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa0-5k-aKv">
+                                <rect key="frame" x="287" y="568" width="107" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="twitter"/>
+                                <connections>
+                                    <action selector="twitterPressed:" destination="ual-hh-azg" eventType="touchUpInside" id="ZS0-Op-mxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP1-Gl-akB">
+                                <rect key="frame" x="273" y="699" width="107" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="tiktok"/>
+                                <connections>
+                                    <action selector="tiktokPressed:" destination="ual-hh-azg" eventType="touchUpInside" id="OJP-xt-67t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITN-xJ-Am8">
+                                <rect key="frame" x="187" y="699" width="41" height="95"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="facebook"/>
+                                <connections>
+                                    <action selector="facebookPressed:" destination="ual-hh-azg" eventType="touchUpInside" id="KPf-da-gy1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contactimage1" translatesAutoresizingMaskIntoConstraints="NO" id="Lvu-nO-EOb">
+                                <rect key="frame" x="0.0" y="113" width="414" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eGh-hc-k1w"/>
+                        <color key="backgroundColor" red="0.80359454269999997" green="0.83279836470000002" blue="0.92040983060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zhz-b8-mJ9" firstAttribute="leading" secondItem="eGh-hc-k1w" secondAttribute="leading" constant="20" id="9q5-Dx-r1Q"/>
+                            <constraint firstItem="eGh-hc-k1w" firstAttribute="trailing" secondItem="zhz-b8-mJ9" secondAttribute="trailing" constant="20" id="D3M-Dy-lec"/>
+                            <constraint firstItem="zhz-b8-mJ9" firstAttribute="top" secondItem="Cvv-py-dOm" secondAttribute="top" constant="65" id="Naf-KX-Ygd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPg-lf-RQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.94392523364479" y="747.73218142548603"/>
+        </scene>
+        <!--Experiences View Controller-->
+        <scene sceneID="Uvm-e7-vSq">
+            <objects>
+                <viewController id="mns-Ic-Bc1" customClass="ExperiencesViewController" customModule="Este_e_Lauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bqA-8D-6hB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuI-j2-eDy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vi-G2-wxC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2700"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-17 at 8.11.31 AM" translatesAutoresizingMaskIntoConstraints="NO" id="j11-d4-5mk">
+                                                <rect key="frame" x="-406" y="-118" width="1131" height="936"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOT CONVINCED YET?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zU-TV-QbR">
+                                                <rect key="frame" x="68" y="221" width="294" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <size key="shadowOffset" width="2" height="2"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHECK OUT SOME OF OUR AMAZING CUSTOMERS' RESULTS!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUN-Sd-Ba6">
+                                                <rect key="frame" x="68" y="423" width="294" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.066666662690000003" green="0.15686275059999999" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <size key="shadowOffset" width="2" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89E-wx-QyY">
+                                                <rect key="frame" x="207" y="607" width="17" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="V">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="29" name="Papyrus"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-ix-BPK">
+                                                <rect key="frame" x="207" y="625" width="17" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="V">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.94901961089999998" green="0.89803922179999995" blue="0.75294119120000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="29" name="Papyrus"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@STYLISHY SOCIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hm-85-Ws6">
+                                                <rect key="frame" x="249" y="1213" width="157" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlD-KQ-haw">
+                                                <rect key="frame" x="-13" y="1242" width="440" height="305"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="beforeafter2" title=""/>
+                                                <connections>
+                                                    <action selector="beforeafter2Pressed:" destination="mns-Ic-Bc1" eventType="touchUpInside" id="Axz-Ve-EAg"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@EMILY ALGAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-Jd-7nE">
+                                                <rect key="frame" x="286" y="1555" width="120" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-ny-bCC">
+                                                <rect key="frame" x="-13" y="900" width="440" height="305"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="beforeafter1" title=""/>
+                                                <connections>
+                                                    <action selector="beforeafter1Pressed:" destination="mns-Ic-Bc1" eventType="touchUpInside" id="lJU-mw-B8p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VQ-zr-JPg">
+                                                <rect key="frame" x="-13" y="1584" width="440" height="305"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="beforeafter3" title=""/>
+                                                <connections>
+                                                    <action selector="beforeafter3Pressed:" destination="mns-Ic-Bc1" eventType="touchUpInside" id="diW-O8-QjR"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@SHANNON LAWLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ien-vC-TJx">
+                                                <rect key="frame" x="236" y="1897" width="170" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmJ-kX-UId">
+                                                <rect key="frame" x="-13" y="1926" width="440" height="305"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="beforeafter4" title=""/>
+                                                <connections>
+                                                    <action selector="beforeafter4Pressed:" destination="mns-Ic-Bc1" eventType="touchUpInside" id="m7A-lU-sHs"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@FIRAS ABBOUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-gc-T59">
+                                                <rect key="frame" x="271" y="2239" width="135" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-LL-5Xm">
+                                                <rect key="frame" x="-13" y="2268" width="440" height="305"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="beforeafter5" title=""/>
+                                                <connections>
+                                                    <action selector="beforeafter5Pressed:" destination="mns-Ic-Bc1" eventType="touchUpInside" id="492-BA-xoL"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@LUSHANGEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-3Q-wLk">
+                                                <rect key="frame" x="292" y="2581" width="114" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwo-6b-L7n">
+                                                <rect key="frame" x="20" y="2650" width="94" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="ABOUT">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="E46-Na-XRa" kind="presentation" modalPresentationStyle="fullScreen" id="Zy4-qP-YRz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-2K-gFR">
+                                                <rect key="frame" x="108" y="2650" width="98" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="CONTACT">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="ual-hh-azg" kind="presentation" modalPresentationStyle="fullScreen" id="TVx-q4-qAG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-Ed-m6O">
+                                                <rect key="frame" x="200" y="2650" width="82" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="LATEST">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="RAv-o7-CkA" kind="presentation" modalPresentationStyle="fullScreen" id="OFy-IZ-Z3d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-o8-uDS">
+                                                <rect key="frame" x="273" y="2650" width="121" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="EXPERIENCES">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="baseBackgroundColor" red="0.074509806930000005" green="0.1647058874" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHARE YOUR BEFORE AND AFTER PICTURES WITH US!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N79-Zi-Ec6">
+                                                <rect key="frame" x="46" y="2627" width="316" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                <color key="textColor" red="0.019607843829999999" green="0.02745098248" blue="0.11372549830000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.80392158030000005" green="0.83529412749999998" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2700" id="4Q5-Gf-Nh2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9vi-G2-wxC" secondAttribute="bottom" id="IIC-a9-8iG"/>
+                                    <constraint firstItem="9vi-G2-wxC" firstAttribute="leading" secondItem="PuI-j2-eDy" secondAttribute="leading" id="Ilp-4O-T47"/>
+                                    <constraint firstItem="9vi-G2-wxC" firstAttribute="top" secondItem="PuI-j2-eDy" secondAttribute="top" id="Sei-09-j5c"/>
+                                    <constraint firstAttribute="trailing" secondItem="9vi-G2-wxC" secondAttribute="trailing" id="hU7-m0-ChI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mIL-a3-oI4"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PuI-j2-eDy" firstAttribute="trailing" secondItem="mIL-a3-oI4" secondAttribute="trailing" id="3nO-I4-ZBv"/>
+                            <constraint firstItem="PuI-j2-eDy" firstAttribute="top" secondItem="bqA-8D-6hB" secondAttribute="top" id="JQE-8i-qVB"/>
+                            <constraint firstAttribute="bottom" secondItem="PuI-j2-eDy" secondAttribute="bottom" id="bmm-g5-ZD4"/>
+                            <constraint firstItem="PuI-j2-eDy" firstAttribute="leading" secondItem="mIL-a3-oI4" secondAttribute="leading" id="bol-m1-cam"/>
+                            <constraint firstItem="9vi-G2-wxC" firstAttribute="width" secondItem="bqA-8D-6hB" secondAttribute="width" id="hFm-gB-ZwS"/>
+                            <constraint firstItem="9vi-G2-wxC" firstAttribute="height" secondItem="bqA-8D-6hB" secondAttribute="height" multiplier="3.01339" id="mWt-Di-pD6"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dR-Rm-Cfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="322"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f1m-f9-ijU"/>
+        <segue reference="abf-Wg-VBr"/>
+        <segue reference="cxc-mT-pjV"/>
+        <segue reference="owQ-lw-ybs"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="0" width="3000" height="3000"/>
+        <image name="1" width="4500" height="4500"/>
+        <image name="10" width="1080" height="1080"/>
+        <image name="11" width="1080" height="1080"/>
+        <image name="2" width="4500" height="4500"/>
+        <image name="3" width="4500" height="4500"/>
+        <image name="4" width="4500" height="4500"/>
+        <image name="5" width="4500" height="4500"/>
+        <image name="5(1)" width="4500" height="4500"/>
+        <image name="6" width="4500" height="4500"/>
+        <image name="8" width="4500" height="4500"/>
+        <image name="9" width="4500" height="4500"/>
+        <image name="Screen Shot 2022-07-16 at 9.50.20 AM" width="1414" height="776"/>
+        <image name="Screen Shot 2022-07-17 at 8.11.31 AM" width="1464" height="814"/>
+        <image name="Screen Shot 2022-07-17 at 8.11.31 AM copy" width="1464" height="200"/>
+        <image name="beforeafter1" width="430" height="307"/>
+        <image name="beforeafter2" width="461" height="307"/>
+        <image name="beforeafter3" width="461" height="307"/>
+        <image name="beforeafter4" width="462" height="307"/>
+        <image name="beforeafter5" width="464" height="307"/>
+        <image name="contactimage1" width="312" height="312"/>
+        <image name="facebook" width="100" height="100"/>
+        <image name="galaxy" width="300" height="168"/>
+        <image name="insta" width="100" height="100"/>
+        <image name="latest1" width="160" height="160"/>
+        <image name="latest1 copy" width="220" height="220"/>
+        <image name="latest2" width="160" height="160"/>
+        <image name="latest2 copy" width="220" height="220"/>
+        <image name="latest3" width="160" height="160"/>
+        <image name="latest3 copy" width="220" height="220"/>
+        <image name="latest4" width="160" height="160"/>
+        <image name="latest4 copy" width="220" height="220"/>
+        <image name="latest5" width="160" height="160"/>
+        <image name="latest5 copy" width="220" height="220"/>
+        <image name="latest6" width="160" height="160"/>
+        <image name="latest6 copy" width="220" height="220"/>
+        <image name="new1" width="284" height="284"/>
+        <image name="new2" width="402" height="402"/>
+        <image name="new4" width="1200" height="720"/>
+        <image name="pinterest" width="100" height="100"/>
+        <image name="tiktok" width="100" height="100"/>
+        <image name="twitter" width="125" height="100"/>
+        <image name="youtube" width="139" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
